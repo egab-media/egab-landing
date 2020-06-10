@@ -159,7 +159,7 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background-color: #ffb03c;
+  background-color: #a0b475;
   border-radius: 40px;
   overflow: hidden;
   position: relative;
@@ -174,9 +174,9 @@ p {
   top: 22px;
   height: 100%;
   width: 160%;
-  background-image: -moz-linear-gradient(90deg, #ff8213 0%, #ffa508 100%);
-  background-image: -webkit-linear-gradient(90deg, #ff8213 0%, #ffa508 100%);
-  background-image: -ms-linear-gradient(90deg, #ff8213 0%, #ffa508 100%);
+  background-image: -moz-linear-gradient(90deg, #a0b475 0%, #acbd86 100%);
+  background-image: -webkit-linear-gradient(90deg, #a0b475 0%, #acbd86 100%);
+  background-image: -ms-linear-gradient(90deg, #a0b475 0%, #acbd86 100%);
   z-index: -1;
   transform: rotate(17deg);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1164,7 +1164,7 @@ p {
 .banner-area {
   position: relative;
   z-index: 10;
-  height: 90vh;
+  height: 100vh;
 }
 
 .banner-area .banner-items {
@@ -1203,9 +1203,9 @@ p {
 
 .banner-area .banner-items .banner-content p {
   color: #222;
-  font-size: 18px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 42px;
   padding-right: 130px;
   padding-top: 22px;
   padding-bottom: 39px;
@@ -1271,11 +1271,11 @@ p {
   height: 100%;
   width: 100%;
   z-index: -2;
-  /* background-image: url(../images/banner-base.png); */
+   background-image: url(../images/slide.jpg);
   background-size: 100%;
   background-position: top right;
   background-repeat: no-repeat;
-  min-height: 1250px;
+  min-height: 1080px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
