@@ -320,6 +320,12 @@
             return mainNavContent;
         });
 
+        mobileNavContainer.append(`
+            <div class="navbar-btn d-sm-flex">
+                <a class="main-btn" href="mailto:dina@egab.co">Contact us</a>
+            </div>
+        `);
+
 
 
         //Dropdown Button

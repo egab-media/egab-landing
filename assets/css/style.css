@@ -398,7 +398,7 @@ p {
 }
 
 .header-nav .navigation .navbar .side-menu__toggler i {
-  color: #fff;
+  color: #000;
   font-size: 24px;
 }
 
@@ -826,6 +826,15 @@ p {
   }
 }
 
+@media (max-width: 400px) {
+  .header-nav .navigation .navbar .navbar-btn {
+    position: absolute;
+    right: 50px;
+    top: 150%;
+    transform: translateY(-50%);
+  }
+}
+
 @-webkit-keyframes sticky {
   0% {
     top: -200px;
@@ -1164,7 +1173,7 @@ p {
 .banner-area {
   position: relative;
   z-index: 10;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .banner-area .banner-items {
@@ -1190,12 +1199,18 @@ p {
 }
 
 @media (max-width: 767px) {
+  .banner-area {
+    min-height: auto;
+  }
   .banner-area .banner-items .banner-content .title {
     font-size: 38px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .banner-area {
+    min-height: auto;
+  }
   .banner-area .banner-items .banner-content .title {
     font-size: 56px;
   }
@@ -1220,22 +1235,23 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-area .banner-items .banner-content p {
     padding-right: 0;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .banner-area .banner-items .banner-content p {
     padding-right: 0px;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 30px;
+    color: #838999;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .banner-area .banner-items .banner-content p {
     padding-right: 60px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 36px;
   }
 }
@@ -1303,6 +1319,8 @@ p {
   .banner-area::before {
     background-size: cover;
     background-position: 30%;
+    background-image: url(../images/mobile-slide.jpg);
+    min-height: auto;
   }
 }
 
@@ -2138,6 +2156,70 @@ p {
 .business-area {
   position: relative;
   z-index: 10;
+  background: #f2f4f8;
+}
+.business-area::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 660px;
+  border-radius: 0;
+  background-image: -moz-linear-gradient(-38deg, #ffedcc 0%, #f5bb45 100%);
+  background-image: -webkit-linear-gradient(-38deg, #ffedcc 0%, #f5bb45 100%);
+  background-image: -ms-linear-gradient(-38deg, #ffedcc 0%, #f5bb45 100%);
+  border-radius: 100px 0px 0px 100px;
+  z-index: -2;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .business-area::before {
+    width: 390px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .business-area::before {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .business-area::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .business-area::before {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .business-area::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .business-area::after {
+    display: none;
+  }
+}
+.business-area::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  height: 575px;
+  width: 490px;
+  background-image: url(../images/customers-pattern.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .business-area .business-shape {
@@ -2258,9 +2340,9 @@ p {
 
 .business-area .business-thumb {
   position: absolute;
-  right: 0;
+  left: -4%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-4%, -50%) rotate(180deg);
   z-index: -1;
 }
 
@@ -2309,7 +2391,7 @@ p {
   height: 100%;
   width: 660px;
   border-radius: 0;
-  background-image: -moz-linear-gradient(-38deg, #c26458 0%, #a0b475 100%);
+  background-image: -moz-linear-gradient(-38deg, #c26458 0%, #a0b475 100%);;
   background-image: -webkit-linear-gradient(-38deg, #c26458 0%, #a0b475 100%);
   background-image: -ms-linear-gradient(-38deg, #c26458 0%, #a0b475 100%);
   border-radius: 0 100px 100px 0;
