@@ -1230,7 +1230,7 @@ p {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
-  top:33vh;
+  top:43vh;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2152,7 +2152,7 @@ p {
 
 .about-area .about-content ul li i {
   padding-right: 8px;
-  color: #4eaffe;
+  color: #a0b474;
 }
 
 .brand-area {
@@ -3149,6 +3149,7 @@ p {
   font-size: 46px;
   padding-top: 4px;
   padding-bottom: 30px;
+  padding-left:10vh;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
