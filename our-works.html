@@ -112,7 +112,7 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link page-scroll" href="./our-works.html">Our Works</a>
+                                            <a class="nav-link page-scroll" href="./our-works.html">Our Work</a>
                                         </li>
 
                                     </ul>
@@ -135,7 +135,7 @@
             <div class="">
                 <div class="text-left">
                     <div class="section-title">
-                    <h1 class="title">Our Works</h1>
+                    <h1 class="title">Our Work</h1>
                     </div>
                 </div>
 
@@ -205,14 +205,15 @@
                     img.setAttribute("class", "card-img-top");
                     img.src = story.cover ? story.cover : "./mobile-slide.jpg";
                     img.alt = story.title
-                    //img.maxWidth = this.hasAttribute('image-width') ? this.getAttribute('image-width') : '400'
+                    //img.width = this.hasAttribute('image-width') ? this.getAttribute('image-width') : '400'
+                    img.height = this.hasAttribute('image-height') ? this.getAttribute('image-height') : '200'
 
                     // card body
                     const cardBody = card.appendChild(document.createElement("div"));
                     cardBody.setAttribute("class", "card-body");
 
-                    const cardTitle = cardBody.appendChild(document.createElement("h5"));
-                    cardTitle.setAttribute("class", "card-title text-center");
+                    const cardTitle = cardBody.appendChild(document.createElement("h6"));
+                    cardTitle.setAttribute("class", "card-title text-center font-weight-bold");
                     const titleLink = cardTitle.appendChild(document.createElement('a'));
                     titleLink.setAttribute('href', story.url)
                     titleLink.textContent = story.title
