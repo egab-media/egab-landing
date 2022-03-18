@@ -221,8 +221,7 @@
                     // card text
                     const cardFooter = card.appendChild(document.createElement("div"));
                     cardFooter.setAttribute("class", "card-footer text-center");
-                    const date = cardFooter.appendChild(document.createElement('p'))
-                    date.textContent = story.date
+
                     const link = cardFooter.appendChild(document.createElement('a'));
                     link.setAttribute('href', story.url)
                     const mutedText = link.appendChild(document.createElement('small'));
