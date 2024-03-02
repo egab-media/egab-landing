@@ -175,6 +175,21 @@ function loadLatestNews() {
                 storyCard.find('.our-work-story-card-link').attr('href', article.url);
 
                 $('#our-work-story-container').append(storyCard);
+
+                var x,left,down;
+                $('#our-work-story-container').mousedown(function(e) {
+                    e.preventDefault();
+                    down = true;
+                    x = e.pageX;
+                    left = $(this).scrollLeft()
+                });
+                $('body').mousemove(function(e) {
+                    if (down) {
+                        var newX = e.pageX;
+                        $('#our-work-story-container').scrollLeft(left - newX + x)
+                    }
+                });
+                $('body').mouseup(function(e){down = false;});
             });
         }
     })
